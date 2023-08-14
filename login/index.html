@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ÜYE GİRİŞ</title>
+  <link rel='stylesheet' href='aqua-min.css'><link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.css" />
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form class="login-form"  runat="server">
+  <h1><img src="aosb-logo.png"></h1>
+  <div class="form-input-material">
+    <input type="text" name="username" id="username" placeholder=" Kullanıcı Adı" autocomplete="off" class="form-control-material" required />
+  </div>
+  </div>
+  <div class="form-input-material">
+    <input type="password" name="password" id="password" placeholder="Şifre " autocomplete="off" class="form-control-material" required />
+    <i class="circular eye link icon" onclick="togglePassword()" style="color: white;"></i>
+  </div>
+  <button type="submit" class="btn btn-primary btn-ghost">Giriş Yap</button>
+</form>
+<script>
+  function togglePassword() {
+      var element = document.getElementById('password');
+      element.type = (element.type == 'password' ? 'text' : 'password');
+  }
+</script>
+</body>
+</html>
