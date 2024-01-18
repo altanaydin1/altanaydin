@@ -1,1 +1,1 @@
-# altanaydin
+# altanaydin.com.tr site codes
